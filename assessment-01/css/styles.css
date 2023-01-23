@@ -1,0 +1,38 @@
+:root{
+    --primary-dark: rgb(23, 63, 95);
+    --primary-light: rgb(32, 99, 155);
+    --accent-green: rgb(60, 174, 163);
+    --accent-green-hover: rgb(46, 135, 126);
+    --accent-yellow: rgb(246, 213, 92);
+    --accent-orange: rgb(237, 85, 59);
+    --text: white;
+}
+
+body{
+    background-color: var(--primary-dark);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text);
+    text-align: center;
+}
+
+h1{
+    color: rgb(237, 85, 59);
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--accent-green);
+    border-radius: 15px;
+    border-color: var(--primary-light);
+    color: var(--text);
+}
+
+button:hover{
+    background-color: var(--accent-green-hover);
+}

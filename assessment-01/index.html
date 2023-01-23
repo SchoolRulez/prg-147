@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie DeCamp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <script>
+        function internalFunction() {
+            document.getElementById("para").innerHTML="The button changed me with an internal script!"
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Module 1 Assessment 1</h1>
+    
+        <p id="para"></p>
+
+        <script>
+            document.getElementById("para").innerHTML="Welcome to the Assessment!";
+        </script>
+
+        <button type="button" onclick="externalFunction()">Try Me!</button>
+        <button type="button" onclick="internalFunction()">No Me!</button>
+        <br>
+        <button type="button" onclick='document.getElementById("para").style.color="var(--accent-yellow)"'>Change Me!</button>
+    </header>
+
+    <main>
+        <img src="images/bird1.jpg" alt="birds" id="bird">
+        <br>
+
+        <button type="button" onclick='document.getElementById("bird").src="images/bird1.jpg"'>Bird1</button>
+        <button type="button" onclick='document.getElementById("bird").src="images/bird2.jpg"'>Bird2</button>
+        <button type="button" onclick='document.getElementById("bird").src="images/bird3.jpg"'>Bird3</button>
+        <br>
+        <button type="button" onclick='document.getElementById("bird").style.display="block"'>Show</button>
+        <button type="button" onclick='document.getElementById("bird").style.display="none"'>Hide</button>
+        <br>
+        <button type="button" onclick="imageSize()">Change Size!</button>
+    </main>
+    
+</body>
+</html>
