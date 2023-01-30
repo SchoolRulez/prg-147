@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Assessment 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body onload="dataWipe()">
+    <header>
+        <h1>Sophie DeCamp's Cafe</h1>
+        <h3>AKA: Module 2 Assessment 1</h3>
+    </header>
+    <main>
+        <form>
+            <div class="user-info">
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" name="first-name"><br>
+
+                <label for="items">What item(s) are you ordering?</label>
+                <select id="items" name="items" onChange="showScreen()">
+                    <option value="1">Drinks</option>
+                    <option value="2">Sandwiches</option>
+                    <option value="3">Sides</option>
+                    <option value="4">Drinks and Sandwiches</option>
+                    <option value="5">Drinks and Sides</option>
+                    <option value="6">Sandwiches and Sides</option>
+                    <option value="7">Drinks, Sandwiches, and Sides</option>
+                </select>
+            </div>
+
+            <div class="item" id="drinks">
+                <h3>Drinks</h3>
+                <label for="drinktype">Type of Drink:</label>
+                <select id="drinktype" name="drinktype">
+                    <option value="1">Water</option>
+                    <option value="2">Soda</option>
+                    <option value="3">Tea</option>
+                    <option value="4">Coffee</option>
+                    <option value="5">Milkshake</option>
+                </select><br>
+                <label for="drinkamount">How Many:</label>
+                <input type="text" id="drinkamount"><br>
+                <label for="drinkcost">Drink(s) Cost:</label>
+                <input type="text" id="drinkcost"><br>
+            </div>
+
+            <div class="item" id="sandwiches">
+                <h3>Sandwiches</h3>
+                <label for="sandtype">Type of Sandwich:</label>
+                <select id="sandtype" name="sandtype">
+                    <option value="1">Turkey</option>
+                    <option value="2">Ham</option>
+                    <option value="3">Meatball</option>
+                    <option value="4">Teriyaki</option>
+                    <option value="5">Grilled Cheese</option>
+                </select><br>
+                <label for="sandamount">How Many:</label>
+                <input type="text" id="sandamount"><br>
+                <label for="sandcost">Sandwich(es) Cost:</label>
+                <input type="text" id="sandcost"><br>
+            </div>
+
+            <div class="item" id="sides">
+                <h3>Sides</h3>
+                <label for="sidetype">Type of Side:</label>
+                <select id="sidetype" name="sidetype">
+                    <option value="1">Fries</option>
+                    <option value="2">Wedges</option>
+                    <option value="3">Chips</option>
+                    <option value="4">Mac&Cheese</option>
+                    <option value="5">Salad</option>
+                </select><br>
+                <label for="sideamount">How Many:</label>
+                <input type="text" id="sideamount"><br>
+                <label for="sidecost">Side(s) Cost:</label>
+                <input type="text" id="sidecost"><br>
+            </div>
+
+            <div class="end" id="end">
+                <button type="button" onclick="sale()">Get Total!</button>
+                <p id="order"></p>
+                <h3>Total:</h3>
+                <p id="total"></p>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <p>Sophie DeCamp</p>
+    </footer>
+</body>
+</html>

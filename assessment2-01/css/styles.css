@@ -1,0 +1,50 @@
+:root{
+    --primary-dark: rgb(88, 60, 60);
+    --primary: rgb(133, 105, 105);
+    --first-tone: rgb(206, 198, 198);
+    --second-tone: rgb(242, 228, 228);
+    --third-tone: rgb(208, 194, 202);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: var(--primary-dark);
+    background-color: var(--primary);
+    text-align: center;
+}
+
+header{
+    background-color: var(--first-tone);
+    margin: 20px;
+    padding: 5px;
+}
+
+div{
+    background-color: var(--second-tone);
+    margin: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+select{
+    font-size: 16px;
+}
+
+button{
+    font-size: 16px;
+}
+
+footer{
+    color: var(--second-tone);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#sandwiches,
+#sides {
+    display: none;
+}
