@@ -6,6 +6,14 @@ function addDate() {
     document.getElementById("rm1width").value = "";
     document.getElementById("rm1height").value = "";
     document.getElementById("rm1cost").value = "";
+    document.getElementById("rm2length").value = "";
+    document.getElementById("rm2width").value = "";
+    document.getElementById("rm2height").value = "";
+    document.getElementById("rm2cost").value = "";
+    document.getElementById("rm3length").value = "";
+    document.getElementById("rm3width").value = "";
+    document.getElementById("rm3height").value = "";
+    document.getElementById("rm3cost").value = "";
 }
 
 function showScreen() {
