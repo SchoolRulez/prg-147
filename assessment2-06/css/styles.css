@@ -1,0 +1,16 @@
+body{
+    background: rgb(119, 167, 204);
+    color: black;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+main{
+    margin: 50px;
+}
+
+footer{
+    font-weight: bold;
+}
