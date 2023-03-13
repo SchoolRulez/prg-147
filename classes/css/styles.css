@@ -1,0 +1,10 @@
+body{
+    font-size: 20px;
+    background: slategray;
+    text-align: center;
+}
+
+footer, h1{
+    margin: 40px;
+    font-weight: bold;
+}
