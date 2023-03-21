@@ -1,0 +1,153 @@
+:root{
+    --primary: rgb(54, 65, 86);
+    --primary-dark: rgb(31, 38, 50);
+    --primary-light: rgb(94, 115, 151);
+    --accent-one: rgb(255, 205, 178);
+    --accent-two: rgb(83, 145, 126);
+    --accent-three: rgb(133, 10, 24);
+    --text-light: rgb(166, 174, 187);
+    --text-dark: rgb(27, 32, 40);
+}
+
+header{
+    grid-area: t;
+}
+
+main{
+    grid-area: u;
+}
+
+footer{
+    grid-area: v;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 3.5fr 1fr;
+    grid-template-areas: 
+    "t"
+    "u"
+    "v";
+    background: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+#image-wrapper{
+    grid-area: a;
+}
+
+#chat{
+    position: absolute;
+    grid: c;
+    margin-top: 500px;
+    margin-left: 13%;
+    margin-right: auto;
+    background: var(--primary-light);
+    border-radius: 10px;
+    border: solid 5px var(--primary-dark);
+    color: var(--primary-dark);
+    font-weight: bold;
+    height: 7%;
+    width: 70%;
+}
+
+#window{
+    display: grid;
+    position: relative;
+    margin-right: 27%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a"
+    "c"
+    "."
+    "b";
+}
+
+button{
+    background: var(--primary-dark);
+    color: var(--text-light);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+}
+
+#opt1{
+    grid-area: e;
+}
+
+#opt2{
+    grid-area: f;
+}
+
+#notes{
+    grid-area: g;
+    visibility: hidden;
+}
+
+#case{
+    grid-area: h;
+    visibility: hidden;
+}
+
+#options{
+    display: grid;
+    grid-area: b;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "e f"
+    "g h";
+}
+
+.back-image{
+    position: absolute;
+    z-index: 1;
+}
+
+.skin-image{
+    position: absolute;
+    z-index: 2;
+}
+
+.eyes-image{
+    position: absolute;
+    z-index: 3;
+}
+
+.clothes-image{
+    position: absolute;
+    z-index: 4;
+}
+
+.hair-image{
+    position: absolute;
+    z-index: 5;
+}
+
+.brows-image{
+    position: absolute;
+    z-index: 7;
+}
+
+.mouth-image{
+    position: absolute;
+    z-index: 8;
+}
+
+.acc-image{
+    position: absolute;
+    z-index: 6;
+    visibility: hidden;
+}

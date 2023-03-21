@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h2 id="npcName">NPC Name</h2>
+    </header>
+    <main>
+        <div id="window">
+            <div class="image-wrapper">
+                <img src="images/background.png" alt="npc" class="back-image">
+                <img src="" alt="skin" id="skin" class="skin-image">
+                <img src="" alt="eyes" id="eyes" class="eyes-image">
+                <img src="" alt="clothes" id="clothes" class="clothes-image">
+                <img src="" alt="hair" id="hair" class="hair-image">
+                <img src="" alt="accessory" alt="accessory" id="accessory" class="acc-image">
+                <img src="" alt="brows" alt="brows" id="brows" class="brows-image">
+                <img src="" alt="mouth" alt="mouth" id="mouth" class="mouth-image">
+            </div>    
+        </div>
+        <div id="chat">
+            <p>This is a game where you must decide if the person is highly suspicious or innocent in a case.</p>
+        </div>
+    </main>
+    <footer>
+        <div id="options">
+            <button type="button" id="opt1" onclick="getText(1)">Next</button>
+            <button type="button" id="opt2" onclick="getText(2)">Skip</button>
+            <button type="button" id="notes" onclick="noteCall()">Notes</button>
+            <button type="button" id="case" onclick="caseCall()">Case</button>
+        </div>
+        <p>Sophie DeCamp</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
